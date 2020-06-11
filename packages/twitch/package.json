@@ -1,0 +1,21 @@
+{
+  "name": "@jsonpbot/twitch",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist && rm -rf tsconfig.tsbuildinfo",
+    "compile": "tsc -b tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "dotenv": "^8.2.0",
+    "twitch-js": "^2.0.0-beta.33",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^7.3.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "packages": [
+        "packages/*"
+    ],
+    "version": "independent",
+    "npmClient": "yarn",
+    "npmClientArgs": [
+        "--production",
+        "--no-optional"
+    ]
+}

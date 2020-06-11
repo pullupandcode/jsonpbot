@@ -1,0 +1,9 @@
+.env
+/node_modules
+/dist
+/packages/**/node_modules
+.vscode
+/packages/**/dist
+.DS_Thumb
+tsconfig.tsbuildinfo
+/packages/**/tsconfig.tsbuildinfo
