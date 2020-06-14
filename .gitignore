@@ -7,3 +7,5 @@
 .DS_Thumb
 tsconfig.tsbuildinfo
 /packages/**/tsconfig.tsbuildinfo
+yarn-error.log
+/packages/**/yarn-error.log

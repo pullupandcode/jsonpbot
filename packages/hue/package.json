@@ -1,0 +1,15 @@
+{
+  "name": "@jsonpbot/hue",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "Jayson J. Phillips",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist && rm -rf tsconfig.tsbuildinfo",
+    "compile": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
