@@ -3,6 +3,9 @@ import hue from "./hue";
 import so from "./so";
 import commands from "./commands";
 import uptime from "./uptime";
+import project from "./project";
+import charity from "./charity";
+import socials from "./socials";
 
 export default {
   hue,
@@ -10,4 +13,7 @@ export default {
   so,
   commands,
   uptime,
+  project,
+  charity,
+  socials,
 };

@@ -3,7 +3,7 @@ import { ApiVersions } from "twitch-js";
 
 const uptime: CommandItem = {
   name: "uptime",
-  description: "command to control hue lights during stream",
+  description: "How long have I been running my damn mouth!?!?!",
   run: async (ctx: CommandContext) => {
     const { chat, api, channel, cmdParams, username } = ctx;
 
@@ -15,7 +15,6 @@ const uptime: CommandItem = {
     const { createdAt } = streamData.stream;
     let startTime = Date.parse(createdAt);
     let uptimeLength = new Date().getTime() - startTime;
-
     let uptimeString = `${
       Math.floor((uptimeLength / (1000 * 60 * 60)) % 60)
     }h, ${
