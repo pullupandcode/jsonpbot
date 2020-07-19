@@ -44,7 +44,7 @@ export default class Twitch {
         if (!ctx.isSelf && ctx.message.startsWith("!")) {
           let [action, ...params] = ctx.message.substr(1).split(" ");
           ctx.cmdParams = params;
-
+          console.log(this.CommandManager.getCommand(action));
           this.CommandManager.getCommand(action) &&
             this.CommandManager.getCommand(action).run(
               { chat: this.chat, api: this.api, cmdParams: params, ...ctx },

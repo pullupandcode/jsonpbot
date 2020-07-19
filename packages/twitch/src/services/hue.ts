@@ -7,6 +7,12 @@ const hueConfig: HueServiceConfig = {
   hue_username: env.HUE_USERNAME,
 };
 
+type ColorStateObject = {
+  h: number;
+  s: number;
+  b: number;
+};
+
 /***
  * Hue Service Singleton
  */
@@ -33,10 +39,32 @@ export default class HueService extends Hue {
     });
   }
 
+  public async setGroupColorState(
+    groupId: string = "4",
+    color: number,
+  ) {
+    const groupState = {
+      colormode: "hs",
+      xy: color,
+    };
+
+    await HueService.instance.setGroupState(groupId, groupState);
+  }
+
   public async setColorCycle(groupId: string = "4") {
     const groupState = {
       alert: "lselect",
       effect: "colorloop",
+      transitiontime: 1,
+    };
+
+    await HueService.instance.setGroupState(groupId, groupState);
+  }
+
+  public async clearColorCycle(groupId: string = "4") {
+    const groupState = {
+      alert: "none",
+      effect: "none",
       transitiontime: 1,
     };
 

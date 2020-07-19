@@ -12,6 +12,9 @@ const uptime: CommandItem = {
       { version: ApiVersions.Kraken },
     );
 
+    if (!streamData.stream) {
+      return chat.say(channel, `Looks like we're currently offline, homie`);
+    }
     const { createdAt } = streamData.stream;
     let startTime = Date.parse(createdAt);
     let uptimeLength = new Date().getTime() - startTime;

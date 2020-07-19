@@ -1,19 +1,23 @@
 import theme from "./theme";
 import hue from "./hue";
 import so from "./so";
-import commands from "./commands";
+import help from "./help";
 import uptime from "./uptime";
 import project from "./project";
 import charity from "./charity";
 import socials from "./socials";
+import rolldie from "./rolldie";
+import about from "./about";
 
 export default {
-  hue,
+  // hue,
+  about,
   theme,
   so,
-  commands,
+  help,
   uptime,
   project,
   charity,
   socials,
+  rolldie,
 };

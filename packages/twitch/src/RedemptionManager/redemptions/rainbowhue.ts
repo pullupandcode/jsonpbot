@@ -7,5 +7,8 @@ export const rainbow: RedemptionItem = {
   run: async () => {
     console.log(await Hue.getInstance().getGroups());
     await Hue.getInstance().setColorCycle();
+    setTimeout(async () => {
+      await Hue.getInstance().clearColorCycle();
+    }, 15000);
   },
 };

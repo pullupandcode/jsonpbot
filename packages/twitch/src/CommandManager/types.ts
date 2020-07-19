@@ -25,6 +25,6 @@ export type CommandConfig = {
 };
 
 export interface ICommandManager {
-  getCommandList(): Array<CommandListItem>;
+  getCommandList(): Promise<Array<CommandListItem>>;
   getCommand(name: string): CommandItem | undefined;
 }
