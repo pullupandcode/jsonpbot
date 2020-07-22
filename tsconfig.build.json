@@ -5,6 +5,7 @@
         "allowSyntheticDefaultImports": true,
         "target": "es6",
         "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
         "declaration": true,
         "composite": true,
         "moduleResolution": "node",

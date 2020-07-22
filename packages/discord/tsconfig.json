@@ -1,0 +1,20 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "types": [
+            // add node as an option
+            "node",
+            "reflect-metadata"
+        ],
+        "typeRoots": [
+            // add path to @types
+            "node_modules/@types"
+        ],
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

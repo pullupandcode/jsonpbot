@@ -1,4 +1,8 @@
 import { CommandContext, CommandItem } from "../types";
+import { UserContext } from "@jsonpbot/types/models/interfaces";
+
+interface TwitchUserContext extends UserContext {
+}
 
 const so: CommandItem = {
   name: "so",

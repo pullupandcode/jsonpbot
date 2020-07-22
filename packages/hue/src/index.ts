@@ -10,6 +10,8 @@ interface DeviceState {
   on?: boolean;
   alert?: string;
   effect?: string;
+  xy?: number;
+  colormode?: string;
 }
 
 export default class HueService {

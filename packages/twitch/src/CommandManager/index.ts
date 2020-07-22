@@ -24,17 +24,20 @@ class CommandManager implements ICommandManager {
     return CommandManager.instance;
   }
 
-  getCommandList(): Array<CommandListItem> {
-    let results: Array<CommandListItem> = [];
-    console.log(this.commands);
-    for (const [key, value] of this.commands) {
-      // let reward = this.commands.get(key);
-      results.push({
-        name: value.name,
-        description: value.description,
-      });
-    }
+  async getCommandList(): Promise<Array<CommandListItem>> {
+    const results: Array<CommandListItem> = [];
 
+    await this.commands.forEach(
+      (command, key) => {
+        results.push(
+          {
+            name: command.name,
+            description: command.description,
+          },
+        );
+      },
+    );
+    // let reward = this.commands.get(key);
     return results;
   }
 
