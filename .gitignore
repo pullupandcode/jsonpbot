@@ -5,7 +5,12 @@
 .vscode
 /packages/**/dist
 .DS_Thumb
+/packages/**/.DS_Store
 tsconfig.tsbuildinfo
 /packages/**/tsconfig.tsbuildinfo
 yarn-error.log
 /packages/**/yarn-error.log
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
