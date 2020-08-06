@@ -1,6 +1,7 @@
 <script lang="typescript">
-  import { User } from "./types";
-  export let user: User;
+  import { UserTest } from "../types";
+  import { url } from "@sveltech/routify";
+  export let user; // typescript?
 </script>
 
 <header class="w-100 bg-black-90 pa3">
@@ -10,7 +11,8 @@
     </div>
 
     <div class="tr w-50">
-      <a href="#0" class="dib mr2 link white">Link Text</a>
+      <!-- <Link to="/settings">Settings</Link> -->
+      <a href={$url('/login')} class="dib mr2 link white">Login</a>
       <a href="#0" class="dib mr2 link white">Link Text</a>
       <a href="#" class="dib mr2 link white">Link Text</a>
       <a href="#" class="dib mr2 link white">Link Text</a>

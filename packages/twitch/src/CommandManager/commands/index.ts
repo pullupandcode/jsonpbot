@@ -8,6 +8,7 @@ import charity from "./charity";
 import socials from "./socials";
 import rolldie from "./rolldie";
 import about from "./about";
+import discord from "./discord";
 
 export default {
   // hue,
@@ -20,4 +21,5 @@ export default {
   charity,
   socials,
   rolldie,
+  discord,
 };

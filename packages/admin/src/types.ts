@@ -1,3 +1,3 @@
-export type User = {
+export type UserTest = {
   name?: string;
 };

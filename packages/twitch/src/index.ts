@@ -6,6 +6,8 @@ import { client as WebSocketClient, connection } from "websocket";
 import * as PubSub from "./handlers/pubsub";
 import CommandManager from "./CommandManager";
 import RedemptionManager from "./RedemptionManager";
+import CacheManager from "./services/cache";
+
 const { env } = process;
 
 export default class Twitch {
@@ -14,6 +16,7 @@ export default class Twitch {
   private ws: WebSocketClient;
   private CommandManager: CommandManager;
   private pingTimerId: NodeJS.Timeout | null;
+  private cache: CacheManager;
 
   constructor() {
     const { chat, api } = new TwitchJs({
@@ -26,6 +29,7 @@ export default class Twitch {
     this.ws = new WebSocketClient();
     this.CommandManager = CommandManager.getInstance();
     this.pingTimerId = null;
+    this.cache = new CacheManager();
   }
 
   async run() {
@@ -44,11 +48,18 @@ export default class Twitch {
         if (!ctx.isSelf && ctx.message.startsWith("!")) {
           let [action, ...params] = ctx.message.substr(1).split(" ");
           ctx.cmdParams = params;
-          console.log(this.CommandManager.getCommand(action));
-          this.CommandManager.getCommand(action) &&
-            this.CommandManager.getCommand(action).run(
-              { chat: this.chat, api: this.api, cmdParams: params, ...ctx },
-            );
+          if (this.CommandManager.getCommand(action)) {
+            if (!this.cache.find(`${ctx.username}:${action}`)) {
+              this.CommandManager.getCommand(action).run(
+                { chat: this.chat, api: this.api, cmdParams: params, ...ctx },
+              );
+            } else {
+              this.chat.say(
+                ctx.channel,
+                `sorry, @${ctx.username}, you've been cooled down for !${action}. try again in 60 seconds`,
+              );
+            }
+          }
         }
       },
     );

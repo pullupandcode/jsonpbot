@@ -1,9 +1,6 @@
 <script>
-  export let name;
-  import { run } from "./lib/utils";
-  import Header from "./Header.svelte";
-  import MainLayout from "./MainLayout.svelte";
-  import Footer from "./Footer.svelte";
+  import { Router } from "@sveltech/routify";
+  import { routes } from "@sveltech/routify/tmp/routes";
 </script>
 
 <!-- <style>
@@ -27,12 +24,4 @@
     }
   }
 </style> -->
-<Header user={{ name: 'test' }} />
-<MainLayout component={Footer}>
-  <h1>Hello {name}!</h1>
-  <p>
-    Visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-    to learn how to build Svelte apps.
-  </p>
-</MainLayout>
+<Router {routes} />

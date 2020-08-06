@@ -21,8 +21,6 @@ export class RolesService {
   private devReaction: string = "💻";
   private artistReaction: string = "🖌️";
 
-  assignRole;
-
   handle(
     reaction: MessageReaction,
     user: User | PartialUser,
