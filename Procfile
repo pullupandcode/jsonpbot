@@ -1,1 +1,1 @@
-web: cd packages/server && npm run compile && node ./dist/index.js
+web: lerna run compile && lerna run --scope=@jsonpbot/server yarn prod

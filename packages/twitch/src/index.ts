@@ -54,9 +54,8 @@ export default class Twitch {
                 { chat: this.chat, api: this.api, cmdParams: params, ...ctx },
               );
             } else {
-              this.chat.say(
-                ctx.channel,
-                `sorry, @${ctx.username}, you've been cooled down for !${action}. try again in 60 seconds`,
+              this.CommandManager.getCommand(action).run(
+                { chat: this.chat, api: this.api, cmdParams: params, ...ctx },
               );
             }
           }
