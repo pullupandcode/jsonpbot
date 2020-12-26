@@ -1,1 +1,1 @@
-web: lerna run compile && lerna run --scope @jsonpbot/server yarn start
+web: lerna run compile && lerna exec --scope @jsonpbot/server yarn start
