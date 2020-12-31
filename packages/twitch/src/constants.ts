@@ -25,9 +25,9 @@ export const CommandMessages = {
     `Jayson is using the SynthWave '84 theme by Robb Owen. You can download it here: https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode`,
   Socials:
     `You can catch up with Jayson on the following platforms: Twitter: ${Links.Twitter}, Github: ${Links.Github}, ${Links.DEVTo} & ${Links.Website} elsewhere on the web.`,
-  Project:`which POGrammer [Among Us] is sus!?!? About Us with the POGrammers crew - https://twitch.tv/team/POGrammers`,
+  Project:`Tonight, we're doing some 2021 prep, working on improvements to jsonpbot (${Links.JSONPbot}) and chatting about future projects`,
     Game:
-    `Today, we're doing tasks and breaking necks in Among Us!`,
+    `No game today... yet`,
   CITD: `On November 18th, catch me and the rest of the POGrammers for Code in the Dark!`,
   Charity: `Stay tuned for our next charity stream event!`,
   Podcast: `My latest podcast feature was on Episode 29 #WeBelongHere ${Links.LatestPodcast}. Check it out!`,
