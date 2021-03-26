@@ -10,7 +10,7 @@ export enum Links {
     "https://tiltify.com/@jsonp/pull-up-and-code-celebration-for-charity-june-2020",
   LatestPodcast = "https://podcasts.apple.com/us/podcast/we-belong-here-lessons-from-unconventional-paths-to-tech/id1455784370",
   Turalabs = "https://turalabs.com",
-  Webcast = "https://t.co/5ARotjnVTF?amp=1"
+  Webcast = "https://youtu.be/C2EPTA_MS2w"
 }
 
 // YHE5B-CVX8Q-THED8
@@ -25,13 +25,14 @@ export const CommandMessages = {
     `Jayson is using the SynthWave '84 theme by Robb Owen. You can download it here: https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode`,
   Socials:
     `You can catch up with Jayson on the following platforms: Twitter: ${Links.Twitter}, Github: ${Links.Github}, ${Links.DEVTo} & ${Links.Website} elsewhere on the web.`,
-  Project:`Tonight, we're doing some 2021 prep, working on improvements to jsonpbot (${Links.JSONPbot}) and chatting about future projects`,
+  Project:`React, Electron, Typescript, and building our app for our smart mirror.`,
     Game:
     `No game today... yet`,
   CITD: `On November 18th, catch me and the rest of the POGrammers for Code in the Dark!`,
   Charity: `Stay tuned for our next charity stream event!`,
   Podcast: `My latest podcast feature was on Episode 29 #WeBelongHere ${Links.LatestPodcast}. Check it out!`,
-  Webcast: `Had a great chat with Whitnie Wiley of "Love Your Work" about my passion for tech and education, peep it here ${Links.Webcast}`
+  Webcast: `On 3/24, I gave a talk on how to prepare for eng management as an individual contributor, hosted by The Collab Lab: ${Links.Webcast}`,
+  Keyboard: `Okay, nerds, these are the keyboards I use on screen...`
 
 };
 
