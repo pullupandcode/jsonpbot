@@ -25,14 +25,13 @@ export const CommandMessages = {
     `Jayson is using the SynthWave '84 theme by Robb Owen. You can download it here: https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode`,
   Socials:
     `You can catch up with Jayson on the following platforms: Twitter: ${Links.Twitter}, Github: ${Links.Github}, ${Links.DEVTo} & ${Links.Website} elsewhere on the web.`,
-  Project:`React, Electron, Typescript, and building our app for our smart mirror.`,
-    Game:
-    `No game today... yet`,
+  Project:`Today, figuring out how to trigger voice commands to interact with an electron-react application for our smart-mirror. nodejs, electron, react, and more.`,
+    Game: `Saturdays are for adventures and RPGs, so we're gonna continue with Final Fantasy XIII`,
   CITD: `On November 18th, catch me and the rest of the POGrammers for Code in the Dark!`,
   Charity: `Stay tuned for our next charity stream event!`,
   Podcast: `My latest podcast feature was on Episode 29 #WeBelongHere ${Links.LatestPodcast}. Check it out!`,
   Webcast: `On 3/24, I gave a talk on how to prepare for eng management as an individual contributor, hosted by The Collab Lab: ${Links.Webcast}`,
-  Keyboard: `Okay, nerds, these are the keyboards I use on screen...`
+  // Keyboard: `Okay, nerds, these are the keyboards I use on screen...`
 
 };
 
