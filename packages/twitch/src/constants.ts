@@ -13,20 +13,19 @@ export enum Links {
   Webcast = "https://youtu.be/C2EPTA_MS2w"
 }
 
-// YHE5B-CVX8Q-THED8
-// Y7AAD-DVXLT-YPDWL
+
 
 export const CommandMessages = {
   About:
-    `Jay Phillz here. Sr Eng Manger of Learning Platforms, Web Dev Bootcamp Instructor, Mentor, Friend, owner of PS5. Wanna know a bit more about me? peep https://jaysonjphillips.com/now to see what I'm up to!`,
+    `Jay Phillz here. Sr Eng Manger in Ed Tech, Web Dev Bootcamp Instructor, Mentor, Friend, owner of PS5. Wanna know a bit more about me? peep https://jaysonjphillips.com/now to see what I'm up to!`,
   Hue: `Light effect redeemed`,
   Discord: `Come check us on our new Discord server! ${Links.Discord}`,
   Theme:
     `Jayson is using the SynthWave '84 theme by Robb Owen. You can download it here: https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode`,
   Socials:
     `You can catch up with Jayson on the following platforms: Twitter: ${Links.Twitter}, Github: ${Links.Github}, ${Links.DEVTo} & ${Links.Website} elsewhere on the web.`,
-  Project:`Mirror, mirror, on the wall, switch views in react, at my command - using mycroft.ai to create voice skills to change views in react`,
-    Game: `Saturdays are for adventures and RPGs, so we're gonna continue with Final Fantasy XIII`,
+  Project:`Building an API service with nestjs to back our Habit Tracker for our smart mirror!`,
+    Game: `Hmmm...`,
   CITD: `On November 18th, catch me and the rest of the POGrammers for Code in the Dark!`,
   Charity: `Stay tuned for our next charity stream event!`,
   Podcast: `My latest podcast feature was on Episode 29 #WeBelongHere ${Links.LatestPodcast}. Check it out!`,
