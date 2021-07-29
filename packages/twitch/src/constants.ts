@@ -24,7 +24,7 @@ export const CommandMessages = {
     `Jayson is using the SynthWave '84 theme by Robb Owen. You can download it here: https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode`,
   Socials:
     `You can catch up with Jayson on the following platforms: Twitter: ${Links.Twitter}, Github: ${Links.Github}, ${Links.DEVTo} & ${Links.Website} elsewhere on the web.`,
-  Project:`Building an API service with nestjs to back our Habit Tracker for our smart mirror!`,
+  Project:`Building an API service with golang to back our Habit Tracker for our smart mirror!`,
     Game: `Hmmm...`,
   CITD: `On November 18th, catch me and the rest of the POGrammers for Code in the Dark!`,
   Charity: `Stay tuned for our next charity stream event!`,
